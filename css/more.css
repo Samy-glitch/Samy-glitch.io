@@ -1,0 +1,39 @@
+.main-more{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.more-buttons{
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  .more-buttons{
+      display: block;
+  }
+  .more-buttons a{
+    text-decoration: none;
+  }
+  .more-buttons-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px 130px;
+    border-radius: 30px;
+    background-color: var(--secleted-background-color);
+  }
+  .more-buttons-div:hover{
+    background-color: var(--hover-color);
+  }
+  .more-buttons-div p, span{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .more-buttons-div p{
+    margin-left: 20px;
+  }
+
+}
